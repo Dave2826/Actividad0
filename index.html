@@ -7,20 +7,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="container">
-        <h1>Encriptación Hill</h1>
-        
+
+        <h1 class="titulo">Encriptación Hill</h1>
+
+        <!-- MENSAJE ORIGINAL -->
         <div class="section">
-            <label for="mensaje">Mensaje (máx. 30 caracteres)</label>
+            <label>Mensaje (máx. 30 caracteres)</label>
             <textarea id="mensaje" maxlength="30" placeholder="Escribe tu mensaje aquí..."></textarea>
             <div class="char-count">0/30</div>
         </div>
 
+        <!-- MATRIZ DEL MENSAJE -->
         <div class="section">
             <h3>Matriz del mensaje</h3>
-            <div id="matrizMensaje" class="matriz-display"></div>
+            <div id="matrizMensaje" class="box"></div>
         </div>
 
+        <!-- MATRIZ CLAVE -->
         <div class="section">
             <h3>Matriz clave (2x2)</h3>
             <div class="matriz-input">
@@ -31,13 +36,36 @@
             </div>
         </div>
 
-        <button id="encriptar">Encriptar</button>
+        <!-- BOTÓN ENCRIPTAR -->
+        <button id="encriptar" class="btn">Encriptar</button>
 
+        <!-- RESULTADO ENCRIPTADO -->
         <div class="section">
-            <h3>Resultado</h3>
-            <div id="resultado" class="resultado-box"></div>
+            <h3>Resultado encriptado</h3>
+            <div id="resultadoEncriptado" class="box"></div>
         </div>
+
+        <hr>
+
+        <!-- BOTÓN DESENCRIPTAR -->
+        <button id="desencriptar" class="btn-2">Desencriptar</button>
+
+        <!-- RESULTADO FINAL -->
+        <div class="section">
+            <h3>Mensaje original</h3>
+            <div id="resultadoDesencriptado" class="box"></div>
+        </div>
+
     </div>
+
+    <!-- -------- PIE DE PÁGINA CON TUS DATOS -------- -->
+    <footer>
+        <p><strong>Alumno:</strong> David Morales Guerrero</p>
+        <p><strong>Materia:</strong> Fundamentos de Álgebra</p>
+        <p><strong>Actividad:</strong> Encriptación Hill</p>
+        <p><strong>Grupo:</strong> 1-A</p>
+        <p><strong>Fecha:</strong> 26 Noviembre 2025</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
